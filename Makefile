@@ -3,8 +3,10 @@ resume: resume.tex
 	pdflatex resume.tex
 	git add Makefile resume.aux resume.log resume.out resume.tex
 	git commit -m "updated resume supplementary files"
-	git stash -u # stash resume.pdf (untracked file)
 	git push
+
+	git stash -u # stash resume.pdf (untracked file)
+
 	git checkout gh-page
 	mv resume.pdf ./git_backup 
 	git stash apply
