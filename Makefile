@@ -10,7 +10,7 @@ resume: resume.tex
 
 	git checkout gh-page
 	ls
-	rm Dmytro_Moshkovskyi_resume.pdf
+	rm -f Dmytro_Moshkovskyi_resume.pdf
 	git stash apply
 	git add Dmytro_Moshkovskyi_resume.pdf
 	git commit -m "updated resume"
