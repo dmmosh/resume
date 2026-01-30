@@ -9,9 +9,9 @@ resume: resume.tex
 
 	git checkout gh-page
 	ls
-#	mv resume.pdf ./git_backup/
-#	git stash apply
-#	git add resume.pdf
-#	git commit -m "updated resume"
-#	git push
-#	git checkout main
+	rm resume.pdf
+	git stash apply
+	git add resume.pdf
+	git commit -m "updated resume"
+	git push
+	git checkout main
