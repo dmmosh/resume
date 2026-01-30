@@ -1,0 +1,11 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Hides body scrollbars, only PDF scrollbars appear */
+}
+/* Styles the iframe to take the full width and height of its container */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes the default iframe border */
+}
