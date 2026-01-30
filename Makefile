@@ -8,9 +8,10 @@ resume: resume.tex
 	git stash -u # stash resume.pdf (untracked file)
 
 	git checkout gh-page
-	mv resume.pdf ./git_backup 
-	git stash apply
-	git add resume.pdf
-	git commit -m "updated resume"
-	git push
-	git checkout main
+	ls
+#	mv resume.pdf ./git_backup/
+#	git stash apply
+#	git add resume.pdf
+#	git commit -m "updated resume"
+#	git push
+#	git checkout main
