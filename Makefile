@@ -11,6 +11,7 @@ resume: resume.tex
 	git checkout gh-page
 	ls
 	rm -f Dmytro_Moshkovskyi_resume.pdf
+	git rm --cached Dmytro_Moshkovskyi_resume.pdf
 	git stash apply
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
 	git add .
