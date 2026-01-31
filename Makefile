@@ -4,11 +4,11 @@ resume: resume.tex
 	pdflatex --jobname=Dmytro_Moshkovskyi_resume resume.tex
 	git add .
 	git restore --staged Dmytro_Moshkovskyi_resume.pdf
-	
+
 	git commit -m "updated resume supplementary files"
 	git push
 
-	git stash  # stash Dmytro_Moshkovskyi_resume.pdf (untracked file)
+	git stash -u  # stash Dmytro_Moshkovskyi_resume.pdf (untracked file)
 
 	git checkout gh-page
 #	git merge --squash --strategy-option=theirs stash
