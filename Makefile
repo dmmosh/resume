@@ -9,10 +9,8 @@ resume: resume.tex
 	git stash -u # stash Dmytro_Moshkovskyi_resume.pdf (untracked file)
 
 	git checkout gh-page
-	ls
-	rm -f Dmytro_Moshkovskyi_resume.pdf
-	git rm --cached Dmytro_Moshkovskyi_resume.pdf
-	git checkout --ours Dmytro_Moshkovskyi_resume.pdf
+	git merge --squash --strategy-option=theirs stash
+
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
 	git add .
 	git commit -m "updated resume"
