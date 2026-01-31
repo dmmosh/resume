@@ -12,7 +12,8 @@ resume: resume.tex
 	ls
 	rm -f Dmytro_Moshkovskyi_resume.pdf
 	git stash apply
-	git add Dmytro_Moshkovskyi_resume.pdf
+	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
+	git add .
 	git commit -m "updated resume"
 	git push
 	git checkout main
