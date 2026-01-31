@@ -13,7 +13,7 @@ resume: resume.tex
 	git checkout gh-page
 #	git merge --squash --strategy-option=theirs stash
 
-	git stash apply 
+	git stash apply 2>/dev/null
 	git checkout --theirs Dmytro_Moshkovskyi_resume.pdf
 	git add Dmytro_Moshkovskyi_resume.pdf
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
