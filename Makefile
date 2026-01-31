@@ -3,7 +3,7 @@ resume: resume.tex
 	git checkout main
 	pdflatex --jobname=Dmytro_Moshkovskyi_resume resume.tex
 	git add .
-	git reset -- Dmytro_Moshkovskyi_resume.pdf
+	git restore --staged Dmytro_Moshkovskyi_resume.pdf
 	git commit -m "updated resume supplementary files"
 	git push
 
