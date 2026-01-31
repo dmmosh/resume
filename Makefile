@@ -12,7 +12,7 @@ resume: resume.tex
 	ls
 	rm -f Dmytro_Moshkovskyi_resume.pdf
 	git rm --cached Dmytro_Moshkovskyi_resume.pdf
-	git stash apply
+	git checkout --ours Dmytro_Moshkovskyi_resume.pdf
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
 	git add .
 	git commit -m "updated resume"
