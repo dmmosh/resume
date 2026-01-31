@@ -14,7 +14,8 @@ resume: resume.tex
 #	git merge --squash --strategy-option=theirs stash
 
 	git stash apply 
-	git checkout --theirs -- Dmytro_Moshkovskyi_resume.pdf
+	git checkout --theirs Dmytro_Moshkovskyi_resume.pdf
+	git add Dmytro_Moshkovskyi_resume.pdf
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
 	git add .
 	git commit -m "updated resume"
