@@ -1,4 +1,5 @@
 resume: resume.tex
+	git stash clear
 	git checkout main
 	pdflatex --jobname=Dmytro_Moshkovskyi_resume resume.tex
 	git add .
@@ -10,10 +11,11 @@ resume: resume.tex
 
 	git checkout gh-page
 #	git merge --squash --strategy-option=theirs stash
-	git stash apply -u 
-
+	git rm Dmytro_Moshkovskyi_resume.pdf
+	git stash apply 
 	pdftoppm -png Dmytro_Moshkovskyi_resume.pdf Dmytro_Moshkovskyi_resume_img
 	git add .
 	git commit -m "updated resume"
 	git push
 	git checkout main
+	git stash clear
