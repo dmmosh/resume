@@ -7,7 +7,7 @@ resume: resume.tex
 	git commit -m "updated resume supplementary files"
 	git push
 
-	git stash -u # stash Dmytro_Moshkovskyi_resume.pdf (untracked file)
+	git stash  # stash Dmytro_Moshkovskyi_resume.pdf (untracked file)
 
 	git checkout gh-page
 #	git merge --squash --strategy-option=theirs stash
