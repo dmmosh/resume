@@ -78,13 +78,14 @@
     \end{tabular*}\vspace{0pt}
 }
 
-\newcommand{\resumeWorkSubheading}[6]{
+\newcommand{\resumeWorkSubheading}[8]{
   \vspace{0pt}\item\large
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small #5} & \textit{\small #6}\\
-    \end{tabular*}\vspace{0pt}
+    \end{tabular*}\vspace{4pt}
+    \small{\textbf{#7}}: #8
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -95,7 +96,7 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item 
+    \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{0pt}
@@ -106,9 +107,9 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-12pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-18pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-6pt}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTvfdS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,8 +124,8 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge  \scshape Dmytro Moshkovskyi} \\ \vspace{5pt} 
-    \small 561-859-8751 $|$ \href{mailto:x@x.com}{\underline{dm361167@ucf.edu}} $|$ 
+    \textbf{\Huge  \scshape Dmytro Moshkovskyi} \\ \vspace{5pt}
+    \small 561-859-8751 $|$ \href{mailto:x@x.com}{\underline{dm361167@ucf.edu}} $|$
     \href{https://linkedin.com/in/dmmosh}{\underline{linkedin.com/in/dmmosh}} $|$
     \href{https://github.com/dmmosh}{\underline{github.com/dmmosh}}
 \end{center}
@@ -137,11 +138,13 @@
       {University of Central Florida}{Orlando, FL}
       {Bachelor of Science in Computer Science, \textbf{GPA 3.9}}{August 2023 -- May 2027}
       {Knight Hacks Member}{September 2023 -- Present}
+    {Courses}{Intro to Machine Learning, Object Oriented Software, Database Systems, Systems Software, Computer Architecture, Computer Logic and Organization}
+
   \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
-    
+
     \resumeSubheading
       {{\href{https://www.linkedin.com/posts/dmmosh_i-am-thrilled-to-announce-that-i-am-starting-activity-7346303516228894720-Kaab?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6UHAYBmUbVd8N5xFVrmRFWwILywSrvD6s}{\textbf{\underline{AI Intern}}}} }{July 2025 -- January 2026}
       {\href{https://yellow.ai/}{\underline{Yellow.AI}}}{San Mateo, CA}
@@ -152,7 +155,7 @@
         \resumeItem{Debugged, proposed solutions and improvements for both server-side and client-side issues.}
         \resumeItem{Used {\href{https://www.cekura.ai/}{\underline{Cekura.AI}}} for AI-driven testing, generating intelligent benchmarks and analytics.}
          \resumeItemListEnd
-      
+
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -177,11 +180,18 @@
             \resumeItem{Managed a \textbf{Ubuntu Linux} web server on DigitalOcean with a \textbf{MongoDB} database and \href{https://nginx.org/}{\underline{\textbf{Nginx}}} reverse proxy.}
             \resumeItem{Earned a grade of \textbf{100/100} and received appraise from the professor for going above the project expectations.}
           \resumeItemListEnd
+        \resumeProjectHeading
+        {{\href{https://www.linkedin.com/posts/dmmosh_i-created-a-lossless-compression-algorithm-activity-7430327761644421121-DSUg?utm_source=share&utm_medium=member_android&rcm=ACoAAD6UHAYBmUbVd8N5xFVrmRFWwILywSrvD6s}{\textbf{\underline{Bit Count Packing}}}} $|$ \emph{C, Compression, Algorithm Design}}{February 2026 - Present}
+        \resumeItemListStart
+        \resumeItem{Engineered and implemented a lossless compression algorithm, \textbf{reducing data size by 30 to 50\%}}
+        \resumeItem{Used C for the performance-critical nature of the project, deploying low-level,  memory-safe code.}
+        \resumeItem{Ran analytics under real-world stress such as normally distributed data and edge cases.}
+        \resumeItemListEnd
       \resumeProjectHeading
           {{\href{https://www.linkedin.com/posts/dmmosh_i-am-building-my-own-search-engine-my-activity-7410459679161561088-fjuE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6UHAYBmUbVd8N5xFVrmRFWwILywSrvD6s}{\textbf{\underline{Lightning Search}}}}  $|$ \emph{Python, C++, PyTorch, LibTorch, ExecuTorch, Sockets}}{December 2025 -- Present}
           \resumeItemListStart
             \resumeItem{Developed a full-stack search engine built from scratch with C++ sockets, utilizing \href{https://exa.ai/}{\underline{Exa Search}}.}
-            \resumeItem{Using \textbf{PyTorch}, trained a word autocomplete neural network model. It is tailored for software-related queries on a dataset of \textbf{200000} Stack Overflow questions.} 
+            \resumeItem{Using \textbf{PyTorch}, trained a word autocomplete neural network model. It is tailored for software-related queries on a dataset of \textbf{200000} Stack Overflow questions.}
             \resumeItem{Implemented the model in the server through \textbf{ExecuTorch}, built for \textbf{CUDA} backend.}
           \resumeItemListEnd
           \resumeProjectHeading
@@ -196,7 +206,7 @@
             \resumeItem{Coordinated \textbf{a group of 3}, under time constraints of \textbf{36 hours}, to deploy a functional machine learning model.}
             \resumeItem{Led the team to winning \textbf{1st place} in the \textbf{Knight Hacks 2023 Frying Pan Challenge}.}
           \resumeItemListEnd
-          
+
     \resumeSubHeadingListEnd
 
 
