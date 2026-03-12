@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.29)  3 MAR 2026 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.28)  11 MAR 2026 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,7 +369,13 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./Dmytro_Moshkovskyi_resume.aux)
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 4.08003pt, for example:
+(fancyhdr)                \setlength{\footskip}{4.08003pt}.
+
+[2] (./Dmytro_Moshkovskyi_resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -383,13 +389,13 @@ ed.
 (rerunfilecheck)             Checksum: AF74E9ED07224310F0FC2B3DA0436A8E;418.
  ) 
 Here is how much of TeX's memory you used:
- 10903 strings out of 475171
- 171069 string characters out of 5767095
+ 10904 strings out of 475171
+ 171075 string characters out of 5767095
  610267 words of memory out of 5000000
  33775 multiletter control sequences out of 15000+600000
  566115 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,11n,79p,410b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,410b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
@@ -398,10 +404,10 @@ cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on Dmytro_Moshkovskyi_resume.pdf (1 page, 131370 bytes).
+Output written on Dmytro_Moshkovskyi_resume.pdf (2 pages, 131787 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
